@@ -24,7 +24,7 @@ impl<'a> Processor<'a> {
 
             match terms[0] {
                 "set" => {
-                    self.executor.set(terms[1], terms[2].to_string());
+                    self.executor.set(terms[1], terms[2]);
                     println!("Value {} set as {}", terms[1], terms[2]);
                 },
                 "del" => {

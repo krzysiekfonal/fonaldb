@@ -11,7 +11,7 @@ impl<'a> Executor<'a> {
         }
     }
 
-    pub fn set(&mut self, key: &str, value: String) {
+    pub fn set(&mut self, key: &str, value: &str) {
         self.storage.set(key, value);
     }
 
